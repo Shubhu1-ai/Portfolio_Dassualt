@@ -1877,16 +1877,10 @@
   </div>
 </section>
 
-<section>
-  <div class="wrap">
-    <div class="sec-head"><span class="sec-num">05</span><h2 data-i18n="projects.title">More projects</h2></div>
-    <div class="proj-grid" id="projGrid"></div>
-  </div>
-</section>
 
 <section id="skills" style="border-bottom:none;">
   <div class="wrap">
-    <div class="sec-head"><span class="sec-num">06</span><h2 data-i18n="skills.title">Skills</h2></div>
+    <div class="sec-head"><span class="sec-num">05</span><h2 data-i18n="skills.title">Skills</h2></div>
     <div class="skill-cards-grid">
       <div class="skill-card">
         <div class="skill-card-icon-wrap">
@@ -1948,7 +1942,7 @@
 
 <section id="certifications" style="border-bottom:none;">
   <div class="wrap">
-    <div class="sec-head"><span class="sec-num">07</span><h2 data-i18n="certifications.title">Certifications</h2></div>
+    <div class="sec-head"><span class="sec-num">06</span><h2 data-i18n="certifications.title">Certifications</h2></div>
     <p class="sec-sub" data-i18n="certifications.sub">Verified credentials across industrial automation, robotics, software development, AI, and project engineering. Click any certificate to open and download the official document.</p>
     <div class="cert-grid">
       <div class="cert-card" data-pdf="./Certification/CertificateOfCompletion_Learning%20Industrial%20Automation.pdf" data-title="Learning Industrial Automation" data-logo="./skills-icons/linkedin.svg" role="button" tabindex="0">
@@ -2385,75 +2379,6 @@
       "contact.cvEn": "CV Anglais (PDF) ↗",
       "contact.cvFr": "CV Français (Robotique) ↗"
     }
-  };
-
-  const projectsData = {
-    en: [
-      {
-        title: "Automated 3D Scanning Cell & Digital Twin",
-        desc: "Integrating a UR5 cobot with a Go!SCAN 3D sensor for automated metrology. Developing a full digital twin in 3DEXPERIENCE (DELMIA) for Offline Programming (OLP), collision validation, and ergonomic human-robot simulation. Handshake synchronized via a custom C# (.NET) API, achieving 0.100 mm scanning resolution.",
-        tags: ["3DEXPERIENCE", "DELMIA", "Digital Twin", "UR5 Cobot", "C# .NET"],
-        images: [
-          "./Project/UR5e.png",
-          "./Project/UR5e-2.png"
-        ],
-        image: "./Project/UR5e.png",
-        imagePos: "center center",
-        links: []
-      },
-      {
-        title: "ROS2 Autonomous Navigation",
-        desc: "Developed publisher-subscriber nodes in ROS2 for TurtleBot3 autonomous navigation. Explored hardware-software integration using Raspberry Pi and FPGA/VHDL implementations.",
-        tags: ["ROS2", "Embedded Systems", "Python"],
-        links: []
-      },
-      {
-        title: "Automated Precision Milling Robot Cell for Medical Implants",
-        desc: "Designed and simulated a collaborative dual-robot manufacturing cell within a \"prodline\" environment to automate the machining of titanium femoral stem prostheses. Modeled the kinematics of two simplified Stanford Arm variations: an RPP cylindrical robot acting as a rigid workpiece holder, and an RRR articulated robot executing 3-axis precision milling. Derived Denavit-Hartenberg (DH) parameters and constructed transformation matrices, formulating a 6×3 Jacobian matrix to relate joint velocities to Cartesian spatial velocities. Developed a custom geometric inverse kinematics (IK) solver utilizing the Law of Cosines to ensure micron-level tool path adherence without collisions or singularities. Programmed a 5th-degree (Quintic) polynomial trajectory generator operating at 3 Hz over a 15-second cycle to guarantee smooth, jerk-free spline interpolation along the complex anatomical curvature of the implant.",
-        tags: ["MATLAB", "Direct & Inverse Kinematics", "Denavit-Hartenberg (DH)", "Jacobian Matrix", "Trajectory Planning"],
-        images: [
-          "./Project/SCARA.png",
-          "./Project/SCARA-1.png",
-          "./Project/SCARA-3.png"
-        ],
-        image: "./Project/SCARA.png",
-        imagePos: "center center",
-        links: []
-      }
-    ],
-    fr: [
-      {
-        title: "Cellule de Scan 3D Automatisée & Jumeau Numérique",
-        desc: "Intégration d'un cobot UR5 avec un capteur Go!SCAN 3D pour la métrologie automatisée. Développement d'un jumeau numérique sous 3DEXPERIENCE (DELMIA) pour la programmation hors ligne (OLP), la validation des collisions et l'ergonomie. Synchronisation via une API C# (.NET) sur mesure, atteignant une résolution de 0,100 mm.",
-        tags: ["3DEXPERIENCE", "DELMIA", "Jumeau Numérique", "Cobot UR5", "C# .NET"],
-        images: [
-          "./Project/UR5e.png",
-          "./Project/UR5e-2.png"
-        ],
-        image: "./Project/UR5e.png",
-        imagePos: "center center",
-        links: []
-      },
-      {
-        title: "Navigation Autonome ROS2",
-        desc: "Développement de nœuds éditeur-abonné en ROS2 pour la navigation autonome de TurtleBot3. Intégration matériel-logiciel via Raspberry Pi et implémentations FPGA/VHDL.",
-        tags: ["ROS2", "Systèmes Embarqués", "Python"],
-        links: []
-      },
-      {
-        title: "Cellule Robotisée de Fraisage de Précision pour Implants Médicaux",
-        desc: "Conception et simulation d'une cellule de fabrication collaborative à deux robots dans un environnement « prodline » pour automatiser l'usinage de prothèses fémorales en titane. Modélisation cinématique de deux variantes de bras de Stanford : un robot cylindrique RPP comme support rigide de pièce et un robot articulé RRR assurant le fraisage 3 axes. Établissement des paramètres Denavit-Hartenberg (DH) et matrices de transformation, avec formulation d'une matrice Jacobienne 6×3 reliant les vitesses articulaires aux vitesses spatiales cartésiennes. Développement d'un solveur géométrique de cinématique inverse (IK) basé sur la loi des cosinus pour garantir un suivi d'outil micrométrique sans collision ni singularité. Programmation d'un générateur de trajectoire polynomiale de degré 5 (Quintique) cadencé à 3 Hz sur un cycle de 15 s assurant une interpolation fluide et sans à-coups le long des courbures anatomiques complexes.",
-        tags: ["MATLAB", "Cinématique Directe & Inverse", "Denavit-Hartenberg (DH)", "Matrice Jacobienne", "Planification de Trajectoire"],
-        images: [
-          "./Project/SCARA.png",
-          "./Project/SCARA-1.png",
-          "./Project/SCARA-3.png"
-        ],
-        image: "./Project/SCARA.png",
-        imagePos: "center center",
-        links: []
-      }
-    ]
   };
 
   const researchData = {
@@ -2970,7 +2895,6 @@
     });
 
     // Re-render project cards & research cards in active language
-    if (projectsData[lang]) renderCards(projectsData[lang], 'projGrid');
     if (researchData[lang]) renderCards(researchData[lang], 'researchGrid');
 
     // Update Allegri slider caption
